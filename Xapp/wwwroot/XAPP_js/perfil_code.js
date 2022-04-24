@@ -57,6 +57,7 @@ window.onclick = function (e) {
 var BasicBtn = document.getElementsByClassName('basic')[0],
     MediumBtn = document.getElementsByClassName('medium')[0],
     AdvancedBtn = document.getElementsByClassName('advanced')[0];
+ExpertBtn = document.getElementsByClassName('expert')[0];
 Field1 = document.getElementsByClassName('field1')[0];
 Field2 = document.getElementsByClassName('field2')[0];
 
@@ -78,10 +79,15 @@ function AgregarAdvanced() {
     document.getElementById("field2").style.backgroundColor = "#53C7E7";
 }
 
+// Funcion para el boton de Expert
+function AgregarExpert() {
+    document.getElementById("field2").value = document.getElementById("field1").value;
+    document.getElementById("field2").style.backgroundColor = "#d478cb";
+}
+
+
 // Realizar funciones al presionar los botones correspondientes
 BasicBtn.onclick = AgregarBasic;
 MediumBtn.onclick = AgregarMedium;
 AdvancedBtn.onclick = AgregarAdvanced;
-
-
-
+ExpertBtn.onclick = AgregarExpert;
