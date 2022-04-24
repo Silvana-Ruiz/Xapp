@@ -26,6 +26,8 @@ body {
     background-color: rgba(52,52,52,255);
     overflow-x: hidden;
     padding-top: 16px;
+    display:flex;
+    flex-direction:column;
 }
 
 #logo {
@@ -50,6 +52,23 @@ body {
     position: relative;
 }
 
+@media(max-width:768px) {
+    .sidebar {
+        height: 40%;
+        width: 100%;
+        position:static;
+        
+    }
+    #logo {
+        margin: 0 auto;
+        margin-bottom:2rem;
+    }
+    .sidebar a {
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+    
+}
 
     /* Style links on mouse-over */
 
@@ -82,15 +101,48 @@ body {
     grid-row: 2;
 
 }
+@media(max-width:768px) {
+    .myprofiletext{
+        text-align:center;
+    }
+
+    .profileWrapper {
+        display: flex;
+        flex-direction: column;
+
+       
+        position:relative;
+        left:0;
+        
+    
+   
+    }
+    .profilesection{
+        left:0;
+    }
+}
 
 .profileInfo-personal {
-
     position: absolute;
     top: 20%;
-
     grid-column: 1;
     background-color: white;
     border-radius: 30px;
+   
+}
+
+.profileInfo-personal-data {
+    
+    
+}
+
+@media(max-width:768px) {
+    .profileInfo-personal {
+       position:relative;
+       margin: 0;
+
+
+    }
 }
 
 .profileInfo-skills {
@@ -179,26 +231,6 @@ body {
     border-radius: 50px;
 }
 
-#columna1 {
-    margin-top: 0%;
-    height: 400px;
-}
-
-#columna2 {
-    margin-left: 30%;
-    margin-top: 0%;
-    height: 400px;
-}
-
-#columna3 {
-    margin-top: 22%;
-}
-
-#columna4 {
-    margin-left: 30%;
-    margin-top: 22%;
-    height: 400px;
-}
 
 #pdf {
     margin-top: 6%;
