@@ -3,7 +3,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/**COLORES**/
+/**COLORS**/
 :root {
     --grey: #f2f0f0;
     --lightgrey: #f6f6f6;
@@ -105,7 +105,7 @@ body {
 }
 
 
-/*Wrapper*/
+/*Wrapper for GRID*/
 .profileWrapper {
     position: absolute;
     
@@ -138,6 +138,7 @@ body {
     }
 }
 
+/**FIRST COLUMN**/
 .profileInfo-personal {
     position: absolute;
     top: 10%;
@@ -147,6 +148,7 @@ body {
     width: 32%;
     height: 100%;
     left: 0;
+    
 }
 .profileInfo-personal-data {
     display: flex;
@@ -158,8 +160,6 @@ body {
     height:auto;
 }
 
-
-
 @media(max-width:768px) {
     .profileInfo-personal {
        position:relative;
@@ -168,7 +168,6 @@ body {
 
     }
 }
-
 
 .profileInfo-personal-data-afterimg {
     position: absolute;
@@ -179,9 +178,22 @@ body {
     width: 100%;
 }
 
+
 .afterimg {
     width: 80%;
     margin : 0 auto;
+}
+
+input[type=text], input[type=tel], input[type=email], textarea[type=input-field] {
+    width: 100%;
+    border: 1px solid #d0d0d0;
+    display: block;
+    padding: 8px;
+    margin: 5px 0;
+    margin-bottom: 0.5%;
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
 }
 
 
@@ -195,6 +207,8 @@ body {
     border-radius: 50%;
     top: 25%;
     left:23%;
+
+
     
 }
 
@@ -224,9 +238,7 @@ body {
 }
 
 
-
-
-
+/**SECOND COLUMN**/
 .profileInfo-skills {
     grid-column: 2;
     grid-row: 1;
@@ -235,12 +247,6 @@ body {
 .profileInfo-resume {
     grid-column: 2;
     grid-row: 2;
-}
-/* Style the main content */
-.main {
-    
-    /* Same as the width of the sidenav */
-    padding: 0px 10px;
 }
 
 
@@ -360,18 +366,6 @@ body {
         min-width: 150px;
         max-width: 230px
     }
-
-input[type=text] {
-    width: 100%;
-    border: 1px solid #d0d0d0;
-    display: block;
-    padding: 8px;
-    margin: 5px 0;
-    margin-bottom: 0.5%;
-    font-size:2rem;
-    font-weight:500;
-    color:black;
-}
 
 
 .close-forgot {
