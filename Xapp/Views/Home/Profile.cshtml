@@ -11,9 +11,9 @@
 <div class="sidebar">
     <img src="https://drive.google.com/uc?export=view&id=17qRly_RNtO7moC4aSQkWyQjI5xKTv4Ft" id="logo">
     <a href="#Perfil" class="sidebar-labels"> Profile</a>
-    <a href="#Feed" class="sidebar-labels" > Feed</a>
+    <a href="#Feed" class="sidebar-labels"> Feed</a>
     <a href="#XipeCoins" class="sidebar-labels"> XipeCoins</a>
-    <a href="#Calendar" class="sidebar-labels" > Calendar</a>
+    <a href="#Calendar" class="sidebar-labels"> Calendar</a>
 </div>
 
 <!-- Grid Profile-->
@@ -24,21 +24,26 @@
     <div class="profileWrapper">
 
         <div class="profileInfo-personal">
-            <div class="profile-pic">
-                <img src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png" id="photo" />
-                <input type="file" id="file">
-                <label for="file" id="uploadBtn"> Cambiar Foto </label>
-            </div>
-            <div class="d-flex flex-column p-3 py-5">
-                <div class="row mt-2  profileInfo-personal-data">
-                    <div class="col-md-12"><label class="labels">Nombre</label><input type="text" class="form-control" placeholder="Nombre" value=""></div><br>
-                    <div class="col-md-12"><label class="labels">Apellido</label><input type="text" class="form-control" placeholder="Apellido" value=""></div><br>
-                    <div class="col-md-12"><label class="labels">Área</label><input type="text" class="form-control" placeholder="Área" value=""></div><br>
-                    <div class="col-md-12"><label class="labels">Teléfono</label><input type="tel" class="form-control" placeholder="XXX-XXXX-XXX" value=""></div><br>
-                    <div class="col-md-12"><label class="labels">Email</label><input type="email" class="form-control" placeholder="ejemplo@ejemplo.com" value=""></div><br>
-                    <div class="col-md-12"><label class="labels">Bio</label><textarea type="input-field" class="form-control" placeholder="Introduzca una descripcion" value="" style="height:200px"> </textarea></div><br>
+
+            <div class="profileInfo-personal-data">
+                <div class="d-flex flex-column p-3 py-5">
+                    <div class="row mt-2 ">
+                        <div class="profile-pic">
+                            <img src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png" id="photo" />
+                            <input type="file" id="file">
+                            <label for="file" id="uploadBtn"> Cambiar Foto </label>
+                        </div>
+                        <div class="profileInfo-personal-data-name">
+                            <div class="col-md-12"><label class="labels">Nombre</label><input type="text" class="form-control" placeholder="Nombre" value=""></div><br>
+                            <div class="col-md-12"><label class="labels">Apellido</label><input type="text" class="form-control" placeholder="Apellido" value=""></div><br>
+                            <div class="col-md-12"><label class="labels">Área</label><input type="text" class="form-control" placeholder="Área" value=""></div><br>
+                            <div class="col-md-12"><label class="labels">Teléfono</label><input type="tel" class="form-control" placeholder="XXX-XXXX-XXX" value=""></div><br>
+                            <div class="col-md-12"><label class="labels">Email</label><input type="email" class="form-control" placeholder="ejemplo@ejemplo.com" value=""></div><br>
+                            <div class="col-md-12"><label class="labels">Bio</label><textarea type="input-field" class="form-control" placeholder="Introduzca una descripcion" value="" style="height:200px"> </textarea></div><br>
+                        </div>
 
 
+                    </div>
                 </div>
             </div>
         </div>
@@ -87,9 +92,9 @@
     </div>
 </div>
 
-<!--Guardar Cambios Button-->
+<!--Guardar Cambios Button
 <div class="mt-5 text-right"><button class="btn btn-primary profile-button" type="button">Guardar Cambios</button></div>
-
+-->
 <!-- Archivo de Javascript -->
 <script src="~/XAPP_js/perfil_code.js"></script>
 </html>
