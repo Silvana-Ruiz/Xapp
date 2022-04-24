@@ -1,8 +1,24 @@
 ﻿/* Style the sidebar - fixed full height */
 
+* {
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --grey: #f2f0f0;
+    --lightgrey: #f6f6f6;
+    --red:#e224332;
+}
+html {
+    font-size: 62.5%;
+    background-color: var(--grey);
+}
+
+body {
+    font-size: 16px; /* 1rem = 10px*/
+}
 .sidebar {
     height: 100%;
-    width: 225px;
+    width: 20%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -13,34 +29,25 @@
 }
 
 #logo {
-    width: 150px;
+    width: 36%;
     height: auto;
-    size-adjust: auto;
-    margin-left: 18%;
-    margin-top: 20%;
-}
-
-.XIPE {
-    padding: 6px 8px 6px 16px;
-    text-decoration: palegreen;
-    font-size: 40px;
-    color: #ffffff;
-    display: block;
-    margin-left: 10%;
-    margin-top: 5%;
+    margin-left: 15%;
+    margin-top: 26%;
+    margin-bottom:10%;
 }
 
 
 /* Style sidebar links */
 
 .sidebar a {
-    padding: 6px 8px 6px 16px;
+    
     text-decoration: palegreen;
     font-size: 20px;
     color: #ffffff;
     display: block;
-    margin-left: 10%;
-    margin-top: 15%;
+    margin-left: 15%;
+    margin-top: 12%;
+    position: relative;
 }
 
 
@@ -51,8 +58,51 @@
     }
 
 
-/* Style the main content */
+/*My Profile Text*/
+.profilesection {
+    position: relative;
+    margin-top: 5%;
+    left: 27%;
+    
+}
 
+.myprofiletext {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+
+/*Wrapper*/
+.profileWrapper {
+    position: absolute;
+    
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+
+    grid-row: 2;
+
+}
+
+.profileInfo-personal {
+
+    position: absolute;
+    top: 20%;
+
+    grid-column: 1;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.profileInfo-skills {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.profileInfo-resume {
+    grid-column: 2;
+    grid-row: 2;
+}
+/* Style the main content */
 .main {
     margin-left: 160px;
     /* Same as the width of the sidenav */
@@ -60,8 +110,9 @@
 }
 
 
-/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
 
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
 @media screen and (max-height: 450px) {
     .sidebar {
         padding-top: 15px;
@@ -158,14 +209,13 @@ body {
 
 .profile-pic {
     position: absolute;
-    width: 225px;
-    height: 225px;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
     overflow: hidden;
     border: 1px solid grey;
     border-radius: 50%;
+    top: 12%;
+    left:25%;
 }
 
 #photo {
