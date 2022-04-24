@@ -1,12 +1,13 @@
-﻿/* Style the sidebar - fixed full height */
-
+﻿
 * {
     font-family: 'Poppins', sans-serif;
 }
+
+/**COLORES**/
 :root {
     --grey: #f2f0f0;
     --lightgrey: #f6f6f6;
-    --red:#e224332;
+    --red:#e22432;
 }
 html {
     font-size: 62.5%;
@@ -23,7 +24,11 @@ html {
 
 body {
     font-size: 16px; /* 1rem = 10px*/
+    background-color: var(--grey);
 }
+
+
+/**SIDEBAR**/
 .sidebar {
     height: 100%;
     width: 20%;
@@ -78,13 +83,14 @@ body {
     
 }
 
-    /* Style links on mouse-over */
+/* Style links on mouse-over */
 
-    .sidebar a:hover {
-        color: #ff0000;
-    }
+.sidebar a:hover {
+    color: #ff0000;
+}
 
 
+/**PROFILE DATA**/
 /*My Profile Text*/
 .profilesection {
     position: relative;
@@ -134,27 +140,25 @@ body {
 
 .profileInfo-personal {
     position: absolute;
-    top: 20%;
+    top: 10%;
     grid-column: 1;
-    background-color: white;
-    border-radius: 30px;
- 
-   
+    border-radius: 30px 30px 0 0;
+    background-color: white; /**/
+    width: 32%;
+    height: 100%;
+    left: 0;
 }
-
 .profileInfo-personal-data {
-    position: absolute;
-    top:200%;
-    left: 25%;
-    background-color:blue;
-    width:auto;
+    display: flex;
+ 
+    
+    flex-direction: column;
+    width:80%;
+    margin:10%;
+    height:auto;
 }
 
-.profileInfo-personal-data-name {
-    position: absolute;
-    top: 150%;
-    left: 25%;
-}
+
 
 @media(max-width:768px) {
     .profileInfo-personal {
@@ -166,8 +170,22 @@ body {
 }
 
 
-/* Foto de Perfil */
+.profileInfo-personal-data-afterimg {
+    position: absolute;
+    top: 90%;
+    left:0;
+    background-color: white; /**/
+    border-radius: 0 0 30px 30px;
+    width: 100%;
+}
 
+.afterimg {
+    width: 80%;
+    margin : 0 auto;
+}
+
+
+/**PROFILE PICTURE**/
 .profile-pic {
     position: absolute;
     width: 200px;
@@ -175,8 +193,9 @@ body {
     overflow: hidden;
     border: 1px solid grey;
     border-radius: 50%;
-    top: 12%;
-    left: 25%;
+    top: 25%;
+    left:23%;
+    
 }
 
 #photo {
@@ -197,8 +216,7 @@ body {
     transform: translateX(-50%);
     text-align: center;
     background: rgba(0, 0, 0, 0.7);
-    color: wheat;
-    line-height: auto;
+    color: white;
     cursor: pointer;
     display: none;
     margin-bottom: 0px;
@@ -220,7 +238,7 @@ body {
 }
 /* Style the main content */
 .main {
-    margin-left: 160px;
+    
     /* Same as the width of the sidenav */
     padding: 0px 10px;
 }
@@ -239,8 +257,10 @@ body {
         }
 }
 
-body {
-    background: rgb(255, 255, 255)
+
+.form-control{
+    border-radius:10px;
+   font-size:1.5rem;
 }
 
 .form-control:focus {
@@ -265,7 +285,7 @@ body {
 
     .profile-button:active {
         background: #000000;
-        box-shadow: none
+        box-shadow: none;
     }
 
 .back:hover {
@@ -274,11 +294,10 @@ body {
 }
 
 
-/* Columnas */
-
 .labels {
-    font-size: 18px;
+    font-size: 120%;
     color: #ff0000;
+    
 }
 
 .skill-button {
@@ -288,12 +307,7 @@ body {
     cursor: pointer;
 }
 
-#columna1, #columna2, #columna3, #columna4 {
-    background-color: #ffffff;
-    position: absolute;
-    width: 500px;
-    border-radius: 50px;
-}
+
 
 
 #pdf {
@@ -319,7 +333,6 @@ body {
     background-color: white;
     position: center;
     text-align: left;
-    padding: flex;
     height: auto;
 }
 
@@ -354,7 +367,10 @@ input[type=text] {
     display: block;
     padding: 8px;
     margin: 5px 0;
-    margin-bottom: 10px;
+    margin-bottom: 0.5%;
+    font-size:2rem;
+    font-weight:500;
+    color:black;
 }
 
 
@@ -366,7 +382,7 @@ input[type=text] {
 .modal-box .save-button,
 .modal-box input {
     width: 95%;
-    display: block;
+    display: block; 
     margin: 10px auto
 }
 
@@ -426,6 +442,7 @@ h1 {
     margin-top: 20px;
 }
 
+/*SKILLS*/
 .basic {
     background: #36C895;
     color: rgb(0, 0, 0);
