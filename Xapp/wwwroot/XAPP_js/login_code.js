@@ -1,4 +1,4 @@
-﻿// PopUp de Skills
+﻿// PopUp de Cambiar Contraseña
 var closeBut = document.getElementsByClassName('close')[0],
     modal = document.getElementsByClassName('modal-cont')[0],
     loginBut = document.getElementsByClassName('contra-button')[0];

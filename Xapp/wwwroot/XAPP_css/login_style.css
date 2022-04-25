@@ -67,7 +67,7 @@ img {
 
 
 .login {
-    max-height: 100vh;
+    max-height: 100%;
     overflow-Y: auto;
     float: left;
     margin: 0 auto;
@@ -82,14 +82,14 @@ img {
     }
 
         .login .formulario h1 {
-            margin-top: 100px;
-            font-size: 35px;
+            margin-top: 20%;
+            font-size: 280%;
             font-weight: bolder;
         }
 
 
         .login .formulario .login-form {
-            margin-top: 112px;
+            margin-top: 24%;
         }
 
             .login .formulario .login-form form {
@@ -101,20 +101,20 @@ img {
                     font-size: 16px;
                     font-weight: normal;
                     background-color: #efefef;
-                    margin: 12.5px 0;
+                    margin: 2.5%;
                     height: 68px;
                     border: 1px;
-                    padding: 0 30px;
+                    
                     border-radius: 26px;
+                    width: 90% auto;
                 }
 
                 .login .formulario .login-form form button[type=submit] {
                     background: rgba(226, 36, 50, 1);
                     border: none;
                     margin-top: 17%;
-                    margin-bottom: 20px;
-                    margin-left: 200px;
-                    width: 250px;
+                    margin-left: 36%;
+                    width: 45%;
                     height: 58px;
                     text-transform: uppercase;
                     color: rgb(255, 255, 255);
@@ -147,7 +147,7 @@ img {
 
         .login .formulario .remember-form {
             position: relative;
-            margin-top: 50px;
+            margin-top: 5%;
         }
 
             .login .formulario .remember-form input[type=checkbox] {
@@ -168,14 +168,14 @@ img {
                 position: absolute;
                 top: 0px;
                 color: #3B3B3B;
-                margin-left: 15px;
+                margin-left: 0%;
             }
 
 
         .login .formulario .forget-pass {
             position: absolute;
-            right: 63%;
-            margin-top: 510px;
+            left: 37.5%;
+            margin-top: 90%;
         }
 
         .login .formulario a {
@@ -214,7 +214,6 @@ img {
     box-shadow: none;
     border: none;
     cursor: pointer;
-    margin-bottom: 200px;
 }
 
     .contra-button:hover {
@@ -252,7 +251,7 @@ img {
 
 .modal-box {
     width: 40%;
-    margin: 30px auto;
+    margin: 1.5% auto;
     background-color: white;
     position: center;
     text-align: left;
@@ -261,9 +260,9 @@ img {
 
     .modal-box .close {
         position: absolute;
-        right: 585px;
-        top: 30px;
-        font-size: 50px;
+        right: 30.5%;
+        top: 3.5%;
+        font-size: 300%;
         font-weight: bolder;
         cursor: pointer
     }
@@ -280,7 +279,6 @@ input[type=text] {
     display: block;
     padding: 8px;
     margin: 5px 0;
-    margin-bottom: 10px;
     border-radius: 20px;
 }
 
@@ -301,7 +299,7 @@ input[type=text] {
     margin-top: 16px;
     margin-right: 20px;
     cursor: pointer;
-    width: 150px;
+    width: 20%;
     height: 50px;
     border: none;
     border-radius: 30px;
@@ -345,5 +343,5 @@ input[type=text] {
     margin: auto;
     text-align: center;
     display: block;
-    margin-top: 20px;
+    margin-top: 1%;
 }
